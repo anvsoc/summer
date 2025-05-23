@@ -1,16 +1,28 @@
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>summerrr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>yay it's summer</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-yellow-50 text-yellow-900">
-  <div class="w-full flex items-center justify-center pt-10">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            dancing: ['"Dancing Script"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+<body class="bg-yellow-100 font-dancing text-yellow-900">
+
+    <div class="w-full flex items-center justify-center pt-10">
   <header class="h-[50px] bg-gradient-to-r from-yellow-300 via-yelow-400 to-orange-400 flex items-center fixed justify-between my-6 mx-4 px-4 py-1 rounded-md shadow-lg">
     <div class="container mx-auto px-4 flex justify-between items-center">
-      <h1 class="text-xl text-yellow-900 font-Pacifico">Summer Vibes</h1>
+      <h1 class="text-xl text-yellow-900 font-Pacifico">😎</h1>
       <nav>
         <a href="#hero" class="text-yellow-900 hover:text-yellow-500 px-4">Home</a>
         <a href="#activities" class="text-yellow-900 hover:text-yellow-500 px-4">Activities</a>
@@ -20,80 +32,79 @@
   </header>
   </div>
 
-  <section id="hero" class="h-screen bg-cover bg-center rounded-b-lg" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D');">
-    <div class="flex items-center justify-center h-full bg-black bg-opacity-40 rounded-b-lg">
-      <h2 class="text-5xl text-white text-center px-8">yay its summer</h2>
-    </div>
-  </section>
+  <main class="max-w-7xl mx-auto px-6 py-14">
 
-  <section id="activities" class="py-16 bg-yellow-100">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-4xl mb-8">Summer Activities</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-yellow-300 p-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
-          <h3 class="text-2xl font-semibold mb-2">🏖️ Beach Day</h3>
-          <p>Relax by the water, catch some sun, and maybe even build a sandcastle.</p>
+    <section id="intro" class="grid md:grid-cols-2 gap-10 items-center mb-20">
+      <div>
+        <h2 class="text-5xl font-extrabold mb-6 leading-tight max-w-xl">
+          yay it's <span class="text-yellow-600">summer</span>
+        </h2>
+        <p class="text-yellow-700 text-lg mb-8 max-w-lg">
+          Explore sunshine-filled days with refreshing experiences, outdoor fun, and unforgettable moments.
+        </p>
+        <button class="bg-yellow-600 hover:bg-yellow-700 px-8 py-3 rounded-md text-yellow-50 font-semibold transition transform hover:scale-105">
+          Get Started
+        </button>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beach waves" class="w-full h-full object-cover"/>
+      </div>
+    </section>
+
+    <section id="activities" class="mb-20">
+      <h3 class="text-4xl font-bold mb-12 text-center tracking-wide">Fun Summer Activities</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-yellow-50 p-8 rounded-xl shadow-lg flex flex-col items-center space-y-6 hover:shadow-yellow-400 transition-shadow">
+          <div class="text-6xl">🏖️</div>
+          <h4 class="text-2xl font-semibold">Beach Relaxation</h4>
+          <p class="text-yellow-800 text-center">Soak up the sun and enjoy the soothing sounds of waves.</p>
+          <button class="mt-auto bg-yellow-600 text-yellow-50 py-2 px-6 rounded-full hover:bg-yellow-700 transition">Learn More</button>
         </div>
-        <div class="bg-yellow-300 p-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
-          <h3 class="text-2xl font-semibold mb-2">🌇 Sunset Watching</h3>
-          <p>Find a great spot, sit back, and watch the sunset with friends or alone.</p>
+        <div class="bg-yellow-50 p-8 rounded-xl shadow-lg flex flex-col items-center space-y-6 hover:shadow-yellow-400 transition-shadow">
+          <div class="text-6xl">🌅</div>
+          <h4 class="text-2xl font-semibold">Sunset Watching</h4>
+          <p class="text-yellow-800 text-center">Find the perfect vantage point to witness breathtaking sunsets.</p>
+          <button class="mt-auto bg-yellow-600 text-yellow-50 py-2 px-6 rounded-full hover:bg-yellow-700 transition">Learn More</button>
         </div>
-        <div class="bg-yellow-300 p-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
-          <h3 class="text-2xl font-semibold mb-2">🚴‍♂️ Cycling Adventure</h3>
-          <p>Take a bike ride through scenic routes or around your neighborhood.</p>
-        </div>
-        <div class="bg-yellow-300 p-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
-          <h3 class="text-2xl font-semibold mb-2">🍉 Picnic in the Park</h3>
-          <p>Grab your friends and enjoy a nice picnic with some refreshing fruits.</p>
-        </div>
-        <div class="bg-yellow-300 p-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
-          <h3 class="text-2xl font-semibold mb-2">🎥 Movie Marathon</h3>
-          <p>Watch your favorite movies all day long with popcorn and cozy blankets.</p>
-        </div>
-        <div class="bg-yellow-300 p-6 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
-          <h3 class="text-2xl font-semibold mb-2">🍦 Ice Cream Trip</h3>
-          <p>Head to your favorite ice cream shop and enjoy a cold treat on a hot day.</p>
+        <div class="bg-yellow-50 p-8 rounded-xl shadow-lg flex flex-col items-center space-y-6 hover:shadow-yellow-400 transition-shadow">
+          <div class="text-6xl">🚴‍♂️</div>
+          <h4 class="text-2xl font-semibold">Cycle the Trails</h4>
+          <p class="text-yellow-800 text-center">Explore scenic cycling paths and embrace the thrill of adventure.</p>
+          <button class="mt-auto bg-yellow-600 text-yellow-50 py-2 px-6 rounded-full hover:bg-yellow-700 transition">Learn More</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="spin" class="py-16 bg-yellow-200 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl mb-4">Spin the Sun!</h2>
-      <p class="text-lg mb-8">Hover me</p>
-<div id="sun" class="mt-8 text-6xl hover:scale-110 hover:rotate-180 transition-transform duration-500 ease-in-out">🌞</div>
-    </div>
-  </section>
+    <section id="sunspin" class="text-center mb-20">
+      <h3 class="text-4xl font-bold mb-8 tracking-wide">Spin the Sun</h3>
+      <div class="inline-block text-yellow-600 text-[9rem] cursor-pointer select-none transition-transform duration-700 ease-in-out hover:rotate-[360deg] hover:scale-110">
+        🌞
+      </div>
+      <p class="mt-6 text-yellow-700 text-lg">Hover or tap the sun and watch it spin!</p>
+    </section>
 
-  <section id="parks" class="py-16 bg-yellow-50 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl mb-8">Explore Ontario Parks</h2>
-      <ul class="space-y-8 flex justify-center items-center">
-        <li class="bg-yellow-200 p-6 rounded-lg shadow-lg hover:border hover:border-orange-400 hover:border-4 w-min hover:bg-yellow-300 transition duration-300">
-          <a href="https://www.ontarioparks.ca/park/pinery" class="flex items-center justify-center space-x-4">
-            <span class="text-2xl">🌳</span>
-            <span class="text-lg">Pinery Provincial Park</span>
-          </a>
+    <section id="parks" class="mb-20">
+      <h3 class="text-4xl font-bold mb-10 text-center tracking-wide">Ontario Parks to Explore</h3>
+      <ul class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <li class="bg-yellow-50 rounded-xl shadow-md p-6 flex items-center space-x-4 hover:bg-yellow-200 transition cursor-pointer">
+          <span class="text-5xl">🌳</span>
+          <a href="https://www.ontarioparks.ca/park/pinery" target="_blank" class="text-yellow-900 text-xl font-semibold hover:underline">Pinery Provincial Park</a>
         </li>
-        <li class="bg-yellow-200 p-6 rounded-lg shadow-lg w-min hover:border hover:border-orange-400 hover:border-4 hover:bg-yellow-300 transition duration-300">
-          <a href="https://www.ontarioparks.ca/park/algonquin" class="flex items-center justify-center space-x-4">
-            <span class="text-2xl">🏞️</span>
-            <span class="text-lg">Algonquin Provincial Park</span>
-          </a>
+        <li class="bg-yellow-50 rounded-xl shadow-md p-6 flex items-center space-x-4 hover:bg-yellow-200 transition cursor-pointer">
+          <span class="text-5xl">🏞️</span>
+          <a href="https://www.ontarioparks.ca/park/algonquin" target="_blank" class="text-yellow-900 text-xl font-semibold hover:underline">Algonquin Provincial Park</a>
         </li>
-        <li class="bg-yellow-200 p-6 rounded-lg shadow-lg w-min hover:border hover:border-orange-400 hover:border-4 hover:bg-yellow-300 transition duration-300">
-          <a href="https://parks.canada.ca/pn-np/on/bruce" class="flex items-center justify-center space-x-4">
-            <span class="text-2xl">🌊</span>
-            <span class="text-lg">Bruce Peninsula National Park</span>
-          </a>
+        <li class="bg-yellow-50 rounded-xl shadow-md p-6 flex items-center space-x-4 hover:bg-yellow-200 transition cursor-pointer">
+          <span class="text-5xl">🌊</span>
+          <a href="https://parks.canada.ca/pn-np/on/bruce" target="_blank" class="text-yellow-900 text-xl font-semibold hover:underline">Bruce Peninsula National Park</a>
         </li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <footer class="bg-yellow-500 py-6 text-center text-white">
-    <p>&copy; 2025 Summer Vibes. All Rights Reserved.</p>
+  </main>
+
+  <footer class="bg-yellow-600 text-yellow-50 py-8 text-center font-semibold tracking-wide shadow-inner">
+    &copy; 2025 Sunny Trails. All rights reserved.
   </footer>
 
 </body>
